@@ -7,12 +7,12 @@ I think it is important for developers to understand why you are using the devel
 Imagine a friend from high school approaches you and says, "Hey you know how to code right? I have this *AMAZING* app idea that will make us billionaires." Your friend goes on to explain that the app is like Facebook, but with some minor tweaks. Let's give our friend the benefit of the doubt and start planning out this "innovative" app idea. We are going to need some sort of way to display a list of users throughout multiple parts of the app, right? So let's think how we may do this with a list of users. First, we know we can't just write hardcoded html because the list of users to display will likely change based on the page we are viewing and the currently logged in user. Based on these two things we will make an API request and may get something back similar to this...
 ```javascript
 [
-    {img: 'user_0.png', bio: 'I'm user 0'},
-    {img: 'user_1.png', bio: 'I'm user 1'},
-    {img: 'user_2.png', bio: 'I'm user 2'},
-    {img: 'user_3.png', bio: 'I'm user 3'},
-    {img: 'user_4.png', bio: 'I'm user 4'},
-    {img: 'user_5.png', bio: 'I'm user 5'},
+    {img: 'user_0.png', bio: "I'm user 0"},
+    {img: 'user_1.png', bio: "I'm user 1"},
+    {img: 'user_2.png', bio: "I'm user 2"},
+    {img: 'user_3.png', bio: "I'm user 3"},
+    {img: 'user_4.png', bio: "I'm user 4"},
+    {img: 'user_5.png', bio: "I'm user 5"},
 ]
 ```
 Alright we have our data, but how can we change the currently viewed HTML page based on this data? We can use direct DOM manipulation!
@@ -24,12 +24,12 @@ Alright we have our data, but how can we change the currently viewed HTML page b
     </body>
     <script>
          const data_returned_from_api = [
-            {img: 'user_0.png', bio: 'I'm user 0'},
-            {img: 'user_1.png', bio: 'I'm user 1'},
-            {img: 'user_2.png', bio: 'I'm user 2'},
-            {img: 'user_3.png', bio: 'I'm user 3'},
-            {img: 'user_4.png', bio: 'I'm user 4'},
-            {img: 'user_5.png', bio: 'I'm user 5'},
+            {img: 'user_0.png', bio: "I'm user 0"},
+            {img: 'user_1.png', bio: "I'm user 1"},
+            {img: 'user_2.png', bio: "I'm user 2"},
+            {img: 'user_3.png', bio: "I'm user 3"},
+            {img: 'user_4.png', bio: "I'm user 4"},
+            {img: 'user_5.png', bio: "I'm user 5"},
         ];
         const users_list = document.getElementById('users_list');
         data_returned_from_api.forEach((user) => {
@@ -110,12 +110,12 @@ Let's imagine we still want to display users profile data and our API responds w
 
 ```javascript
 const users = [
-    {img: 'user_0.png', bio: 'I'm user 0'},
-    {img: 'user_1.png', bio: 'I'm user 1'},
-    {img: 'user_2.png', bio: 'I'm user 2'},
-    {img: 'user_3.png', bio: 'I'm user 3'},
-    {img: 'user_4.png', bio: 'I'm user 4'},
-    {img: 'user_5.png', bio: 'I'm user 5'},
+    {img: 'user_0.png', bio: "I'm user 0"},
+    {img: 'user_1.png', bio: "I'm user 1"},
+    {img: 'user_2.png', bio: "I'm user 2"},
+    {img: 'user_3.png', bio: "I'm user 3"},
+    {img: 'user_4.png', bio: "I'm user 4"},
+    {img: 'user_5.png', bio: "I'm user 5"},
 ]
 ```
 
