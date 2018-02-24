@@ -17,10 +17,16 @@ class TodoItem extends Component {
 
   render() {
     return(
-      <li>
-          <h4>{`${this.props.todo}: Completed ${this.state.completed}`}</h4>
+      <div
+        style={{
+          padding: 20,
+          margin: 15,
+          background: this.state.completed ? "teal" : "maroon",
+        }}>
+          <h4>{this.props.todo}</h4>
+          <h5>Completed: {this.state.completed.toString()}</h5>
           <button onClick={() => this.onItemClick()}>Change Status</button>
-      </li>
+      </div>
     );
   }
 }
