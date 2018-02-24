@@ -23,6 +23,6 @@ export default class List extends Component {
         var list = this.state.list.map((title, index) => {
             return <ListItem key={index} title={title}/>
         });
-        return <div>{list}</div>;
+        return <ul>{list}</ul>;
     }
 }
