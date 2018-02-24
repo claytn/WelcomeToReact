@@ -12,10 +12,13 @@ ul {
 li {
   padding: 10px;
   width: auto;
-  color: #eee;
 }
 
 li * {
   display: inline-block;
   margin-right: 10px;
+}
+
+h4 {
+  color: #eee;
 }
