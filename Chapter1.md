@@ -1,6 +1,8 @@
 # Chapter 1: What & Why
 ___
 
+
+(slides that follow the chapters are posted [here](https://slides.com/clayton_m12/deck))
 ## What is React?
 React is a front-end Javascript framework for building user interfaces. If you want to learn more about what this means or what goals React is trying to accomplish you can visit the docs [here](https://reactjs.org/).
 
